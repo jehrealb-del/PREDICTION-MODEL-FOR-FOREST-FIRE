@@ -1,3 +1,15 @@
+
+st.subheader("DEBUG OUTPUT")
+
+st.write("Final input DataFrame (model input):")
+st.write(final_input_df)
+
+st.write("Scaled input values:")
+st.write(scaled_input)
+
+st.write("Prediction probabilities:")
+st.write(loaded_model.predict_proba(scaled_input))
+
 import streamlit as st
 import pandas as pd
 import joblib
